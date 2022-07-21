@@ -6,8 +6,8 @@ const productsRouter = express.Router();
 
 productsRouter.route('/').get((req, res) => {
   const url =
-    'mongodb+srv://nodejsapp:NWjr7aaG7baEod9A@cluster0.mhvwws3.mongodb.net/?retryWrites=true&w=majority';
-  const dbName = 'nodeapp';
+    ''; //To Be added in dev time
+  const dbName = '';
 
   (async function mongo() {
     let client;
@@ -30,8 +30,8 @@ productsRouter.route('/').get((req, res) => {
 productsRouter.route('/:id').get((req, res) => {
   const id = req.params.id;
   const url =
-    'mongodb+srv://nodejsapp:NWjr7aaG7baEod9A@cluster0.mhvwws3.mongodb.net/?retryWrites=true&w=majority';
-  const dbName = 'nodeapp';
+    ''; //To Be added in dev time
+  const dbName = '';
 
   (async function mongo() {
     let client;
