@@ -1,6 +1,6 @@
 const { greenBright } = require('chalk');
 const express = require('express');
-const debug = require('debug')('app:adminRouter');
+//const debug = require('debug')('app:adminRouter');
 const { MongoClient } = require('mongodb');
 
 
@@ -8,8 +8,8 @@ const adminRouter = express.Router();
 
 adminRouter.route('/').get((req, res) => {
   const url =
-    'mongodb+srv://nodejsapp:NWjr7aaG7baEod9A@cluster0.b1eod2e.mongodb.net/?retryWrites=true&w=majority';
-  const dbName = 'nodeapp';
+    ''; // to be added in dev time 
+  const dbName = '';
 
   (async function mongo() {
     let client;
