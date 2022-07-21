@@ -22,7 +22,7 @@ adminRouter.route('/').get((req, res) => {
       //const response = await db.collection('products').insertMany();
       res.json(response);
     } catch (error) {
-      debug(error.stack);
+      //debug(error.stack); // to be logged in another way
     }
     client.close();
   })();
